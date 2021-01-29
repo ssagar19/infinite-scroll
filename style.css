@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+  background: #ffd89b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #19547b,
+    #ffd89b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #19547b,
+    #ffd89b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  margin-top: 155px;
+  margin-bottom: 155px;
+  font-size: 50px;
+  letter-spacing: 15px;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.image-container {
+  margin: 10px 20%;
+}
+.image-container img {
+  width: 100%;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  .image-container {
+    margin: 10px;
+  }
+}
